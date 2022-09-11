@@ -28,7 +28,7 @@ function App() {
           setValue(e.target.value)
         }} />
       </div>
-      <div className='listWrapper'>
+      <div >
         <PhonesList value={value} list={list} check={isCheck} setIsCheck={setIsCheck} />
       </div>
     </div>

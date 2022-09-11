@@ -46,17 +46,20 @@ input:hover, input:focus{
   padding-top: 2rem ;
   margin: 5rem;
   margin-inline: 10rem;
+  
 }
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-
+  
 }
 .item{
   padding-inline: 1rem;
   padding-block:3rem;
   border: 2px solid hsl(225, 73%, 55%);
+  cursor: pointer;
+
 }
 span {
   color:hsl(225, 73%, 85%);
@@ -64,4 +67,36 @@ span {
 }
 p{
   color: rgb(185, 185, 185);
+  
+}
+
+.searchItems{
+  display: grid ;
+  place-items: center;
+}
+
+.popUp {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(53, 50, 50);
+  backdrop-filter:blur(100%);
+}
+.temp {
+  display: grid;
+  place-items: center;
+}
+.fa-solid{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  scale: 1.5;
+}
+.popUpWrapper{
+  position: relative;
 }
