@@ -36,15 +36,18 @@ const SearchResult = ({ value, list }) => {
   
   // console.log(matchSearch)
 
-  const temp = []
-  list.map((e) => {
-    matchSearch.map((item) => {
-      if (e.id === item) {
-        temp.push(e)
-        console.log(temp)
-      }
+  useEffect(() => {
+    const temp = []
+    list.map((e) => {
+      matchSearch.map((item) => {
+        if (e.id === item) {
+          temp.push(e)
+          setResualt(temp)
+        }
+      })
     })
-  })
+
+  }, [matchSearch])
 
   console.log(result)
     
