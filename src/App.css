@@ -23,10 +23,9 @@ input {
   width: 15vw;
   min-width: 200px;
   max-width: 500px;
-  height: 22px;
+  padding: .5em;
   background: unset;
   outline: none;
-  /* border: none; */
   border-bottom: solid 2px royalblue;
   border-top:solid 2px rgb(49, 49, 49);
   border-left:solid 2px rgb(49, 49, 49);
@@ -34,7 +33,6 @@ input {
 
 }
 input:hover, input:focus{
-  /* background: linear-gradient(35deg, rgb(136, 20rgb(210, 245, 245)6), white); */
   border: solid 2px royalblue;
   box-shadow: 
   0 0 .05em .1em rgb(86, 99, 98);
