@@ -7,6 +7,7 @@ import { DebounceInput } from 'react-debounce-input';
 
 function App() {
   const [list, setList] = useState([])
+  const [isCheck, setIsCheck] = useState(true)
 
   useEffect(() => {
     fetch(`https://dummyjson.com/products`)
@@ -27,10 +28,9 @@ function App() {
           setValue(e.target.value)
         }} />
       </div>
-      <PhonesList list={list} />
-      <SearchResult value={value} list={list} />
-      
-
+      <div className='listWrapper'>
+        <PhonesList value={value} list={list} check={isCheck} setIsCheck={setIsCheck} />
+      </div>
     </div>
   );
 }
